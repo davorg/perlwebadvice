@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use Template;
+use FindBin '$Bin';
+use File::Basename;
+
+my $tt = Template->new(
+  INCLUDE_PATH => ["$Bin/../tt_lib", "$Bin/../in" ],
+  OUTPUT_PATH  => "$Bin/../docs",
+  WRAPPER      => 'page',
+);
+
+foreach (glob "in/*.tt") {
+  s|^in/||;
+  my $out = s/\.tt$//r;
+
+  $tt->process($_, {}, $out)
+    or die $tt->error;
+}
