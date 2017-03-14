@@ -1,0 +1,15 @@
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Use PSGI</h1>
+        <p>Seriously, just use PSGI.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Perl Hacks.</p>
+      </footer>
+    </div> <!-- /container -->
