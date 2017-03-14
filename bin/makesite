@@ -6,18 +6,41 @@ use 5.010;
 
 use Template;
 use FindBin '$Bin';
-use File::Basename;
+use File::Find;
+use File::Path 'make_path';
+use File::Copy;
 
 my $tt = Template->new(
-  INCLUDE_PATH => ["$Bin/../tt_lib", "$Bin/../in" ],
+  INCLUDE_PATH => ["$Bin/../tt_lib", "$Bin/.." ],
   OUTPUT_PATH  => "$Bin/../docs",
   WRAPPER      => 'page',
 );
 
-foreach (glob "in/*.tt") {
-  s|^in/||;
-  my $out = s/\.tt$//r;
+find({ wanted => \&do_this, no_chdir => 1 }, 'in');
 
-  $tt->process($_, {}, $out)
-    or die $tt->error;
+sub do_this {
+  debug("File is: $_\n");
+  return unless -f;
+  debug("File::Find::dir: $File::Find::dir\n");
+  my $dest = $File::Find::dir =~ s|^in/?||r;
+  debug("Dest: $dest\n");
+
+  debug("docs/$dest");
+  make_path "docs/$dest";
+
+  if (/\.tt$/) {
+    my $out = s|\.tt$||r;
+    $out =~ s|^in/||;
+
+    debug("tt: $_ -> $out\n");
+    $tt->process($_, {}, $out)
+      or die $tt->error;
+  } else {
+    debug("Copy: $_ -> docs/$dest\n");
+    copy $_, "docs/$dest";
+  }
+}
+
+sub debug {
+  warn @_ if $ENV{TT_DEBUG};
 }
