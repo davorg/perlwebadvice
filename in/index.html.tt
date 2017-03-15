@@ -1,17 +1,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Perl Web Advice</h1>
-        <p>Perl has been used to build dynamic web sites for a very long time.
-         Over time, the best way to build web sites with Perl has changed.
-         Unfortunately, a lot of the information out there on the World Wide
-         Web doesn't change and is, therefore, rather out of date.</p>
-        <p>This site aims to provide a place where you can find the best,
-         up-to-date advice for building web sites with Perl.</p>
-        <p>(And yes, we're well aware of the dangers of saying that this site
-         will always be up to date. That's why the code for this site is on
-         <a href="https://github.com/davorg/perlwebadvice">Github</a>.)</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+[% INCLUDE jumbo.tt %]
       </div>
     </div>
 
@@ -19,30 +9,13 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>New Project</h2>
-          <p>Congratulations! You've decided to use Perl as the technology
-           to build your new web site. That means you have you pick from
-           a huge selection of modern tools that you can use on your project.
-           This section will help you to decide which tools are best for
-           you.</p>
-          <p><a class="btn btn-default" href="/greenfield/" role="button">View details &raquo;</a></p>
+[% INCLUDE green_blurb.tt %]
         </div>
         <div class="col-md-4">
-          <h2>Project Maintenance</h2>
-          <p>Commiserations! You are maintaining an older web site that is
-           built in Perl. This section will help you to recognise exactly
-           which technologies are being used. It also has advice on moving
-           gradually towards a newer toolset.</p>
-          <p><a class="btn btn-default" href="/legacy/" role="button">View details &raquo;</a></p>
+[% INCLUDE legacy_blurb.tt %]
        </div>
         <div class="col-md-4">
-          <h2>Hosting</h2>
-          <p>You are looking for somewhere to host your new web site that
-           is built in Perl. This section will give you some suggestions of
-           the kinds of hosting options that are open to you. Or, if you're
-           running a hosting company, it has suggestions of what you can do
-           to make your hosting as attractive as possible to Perl projects.</p>
-          <p><a class="btn btn-default" href="/hosting/" role="button">View details &raquo;</a></p>
+[% INCLUDE hosting_blurb.tt %]
         </div>
       </div>
 
