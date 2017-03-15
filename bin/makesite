@@ -5,6 +5,7 @@ use warnings;
 use 5.010;
 
 use Template;
+use Pandoc;
 use FindBin '$Bin';
 use File::Find;
 use File::Path 'make_path';
@@ -14,6 +15,9 @@ my $tt = Template->new(
   INCLUDE_PATH => ["$Bin/../tt_lib", "$Bin/.." ],
   OUTPUT_PATH  => "$Bin/../docs",
   WRAPPER      => 'page',
+  FILTERS      => {
+    markdown   => sub { pandoc->convert(markdown => 'html', $_[0]) }, 
+  },
 );
 
 find({ wanted => \&do_this, no_chdir => 1 }, 'in');
