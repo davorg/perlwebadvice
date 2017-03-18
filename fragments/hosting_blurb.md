@@ -1,4 +1,3 @@
-[% FILTER markdown -%]
 ## Project Maintenance
 
 Commiserations! You are maintaining an older web site that is
@@ -7,4 +6,3 @@ which technologies are being used. It also has advice on moving
 gradually towards a newer toolset.
 
 <p><a class="btn btn-default" href="/legacy/" role="button">View details &raquo;</a></p>
-[% END -%]

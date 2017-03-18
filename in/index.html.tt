@@ -1,7 +1,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-[% INCLUDE jumbo.tt %]
+[% INCLUDE jumbo.md %]
       </div>
     </div>
 
@@ -9,13 +9,13 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-[% INCLUDE green_blurb.tt %]
+[% INCLUDE green_blurb.md %]
         </div>
         <div class="col-md-4">
-[% INCLUDE legacy_blurb.tt %]
+[% INCLUDE legacy_blurb.md %]
        </div>
         <div class="col-md-4">
-[% INCLUDE hosting_blurb.tt %]
+[% INCLUDE hosting_blurb.md %]
         </div>
       </div>
 

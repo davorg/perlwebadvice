@@ -1,4 +1,3 @@
-[% FILTER markdown -%]
 ## New Project
 
 Congratulations! You've decided to use Perl as the technology
@@ -8,4 +7,3 @@ This section will help you to decide which tools are best for
 you.
 
 <p><a class="btn btn-default" href="/greenfield/" role="button">View details &raquo;</a></p>
-[% END -%]

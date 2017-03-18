@@ -1,4 +1,3 @@
-[% FILTER markdown -%]
 ## Hosting
 
 You are looking for somewhere to host your new web site that
@@ -8,4 +7,3 @@ running a hosting company, it has suggestions of what you can do
 to make your hosting as attractive as possible to Perl projects.
 
 <p><a class="btn btn-default" href="/hosting/" role="button">View details &raquo;</a></p>
-[% END -%]

@@ -1,4 +1,3 @@
-[% FILTER markdown -%]
 # Perl Web Advice
 
 Perl has been used to build dynamic web sites for a very long time.
@@ -14,4 +13,3 @@ will always be up to date. That's why the code for this site is on
 [Github](https://github.com/davorg/perlwebadvice).)
 
 <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-[% END -%]
