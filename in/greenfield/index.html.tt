@@ -8,6 +8,21 @@ scratch and building some kind of web application in Perl then you should be
 using PSGI. Or, more accurately, something that is based on PSGI. Even raw
 PSGI gives many advantages over older technologies like CGI, but using a
 framework that is built on top of PSGI will make your life even easier.</p>
+        <p>We will start by writing a very simple PSGI program. But, before
+we can do that, we need to install some software from CPAN.
+<a href="https://metacpan.org/pod/Plack">Plack</a> is a toolkit which makes
+it easy for us to write PSGI programs. Install it from CPAN using your
+favourite CPAN installation mechanism.</p>
+        <p>Having installed Plack, we can write and run our first PSGI
+program. It will, of course, display the text "Hello world". Edit a file
+called <tt>app.psgi</tt> and add the following code:</pre>
+        <pre>my $app = sub {
+  return [
+    200,
+    [ 'Content-type' => 'text/plain' ],
+    [ 'Hello world'],
+  ];
+};</pre>
       </div>
     </div>
 
