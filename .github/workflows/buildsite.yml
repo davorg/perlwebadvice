@@ -2,7 +2,10 @@ name: Generate web page
 
 on:
   push:
-    branches: '*'
+    paths:
+    - fragments/**
+    - in/**
+    - layouts/**
   workflow_dispatch:
 
 jobs:
