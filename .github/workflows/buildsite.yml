@@ -18,7 +18,7 @@ jobs:
       run: aphra build > aphra.log 2>&1
 
     - name: Archive aphra logs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: aphra.log
         path: ./aphra.log
