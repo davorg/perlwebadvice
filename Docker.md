@@ -9,18 +9,17 @@ follows:
 
 * Run the Docker container  
 
-        docker run -p7007:7007 -v$PWD:/perlwebadvice perlwebadvice
+        docker run -p7007:7007 -v$PWD:/perlwebadvice --name perlwebadvice perlwebadvice
 
 * You can then see a local version of the site at http://localhost:7007/
 
-* In a different command terminal run `docker ps` to see the name of your container
+* When you have changed something, you can rebuild the site by running (in a different command line window) 
 
-* When you have changed something, you can rebuild the site by running  
-
-        docker exec YOUR_CONTAINER_NAME aphra build
+        docker exec perlwebadvice aphra build
 
 * Your new version of the site will appear when you refresh http://localhost:7007/
 
 * To close down the Docker container, run  
 
-        docker stop YOUR_CONTAINER_NAME
+        docker stop perlwebadvice
+
