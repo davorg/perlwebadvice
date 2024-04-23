@@ -1,5 +1,5 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="container py-5 bg-light">
       <div class="container">
 [% INCLUDE jumbo.md %]
       </div>
@@ -8,13 +8,13 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
 [% INCLUDE green_blurb.md %]
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
 [% INCLUDE legacy_blurb.md %]
        </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
 [% INCLUDE hosting_blurb.md %]
         </div>
       </div>

@@ -1,5 +1,5 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="container py-5 bg-light">
       <div class="container">
         <h1>Look for PSGI</h1>
         <p>Only use a hosting service that allows you to develop with PSGI.</p>

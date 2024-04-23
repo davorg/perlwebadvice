@@ -12,4 +12,4 @@ up-to-date advice for building web sites with Perl.
 will always be up to date. That's why the code for this site is on
 [Github](https://github.com/davorg/perlwebadvice).)
 
-<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+<p><a class="btn btn-primary btn-lg" href="#">Learn more &raquo;</a></p>

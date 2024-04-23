@@ -1,5 +1,5 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="container py-5 bg-light">
       <div class="container">
         <h1>Switch to PSGI</h1>
         <p>As quickly as possible. Move your code to PSGI.</p>

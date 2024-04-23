@@ -6,4 +6,4 @@ the kinds of hosting options that are open to you. Or, if you're
 running a hosting company, it has suggestions of what you can do
 to make your hosting as attractive as possible to Perl projects.
 
-<p><a class="btn btn-default" href="/hosting/" role="button">View details &raquo;</a></p>
+<p><a class="btn btn-light" href="/hosting/" role="button">View details &raquo;</a></p>

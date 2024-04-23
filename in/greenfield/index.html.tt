@@ -1,5 +1,5 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="container py-5 bg-light">
       <div class="container">
         <h1>Use PSGI</h1>
         <p>PSGI is the "Perl Server Gateway Interface". It is the currently
